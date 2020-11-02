@@ -1,8 +1,15 @@
 [package]
 name = "graph-arena"
 version = "0.1.0"
-authors = ["Nils Martel <nils.martel@graphmasters.net>"]
+authors = ["Nils Martel <nilsmartel@yahoo.de>"]
 edition = "2018"
+license = "MIT OR Apache-2.0"
+description = "Collection type to store immutable graph structures efficiently"
+repository = "https://github.com/nilsmartel/graph-arena"
+readme = "README.md"
+keywords = ["collection", "immutable", "graph"]
+categories = ["data-structures"]
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
