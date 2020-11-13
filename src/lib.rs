@@ -47,6 +47,19 @@ where
     }
 }
 
+impl<T> IntoIterator for GraphArena<T>
+where
+    T: Sized + Hash + Eq,
+{
+    type Item = T;
+
+    type IntoIter = std::vec::IntoIter<T>;
+
+    fn into_iter(self) -> Self::IntoIter {
+        self.data.into_iter()
+    }
+}
+
 fn hash<T>(item: &T) -> u64
 where
     T: Hash,
